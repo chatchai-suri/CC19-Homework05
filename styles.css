@@ -1,0 +1,418 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul { 
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	font-family: "Krub", serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+body {
+	max-width: 1200px;
+	min-height: 100vh;
+	margin: auto;
+	background-color: white;
+	position: relative;
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+  /* min-width: 400px; */
+  /* background-color: violet; */
+}
+
+header {
+  /* background-color: ; */
+  /* outline: dashed 1px red; */
+  color: black;
+  min-height: 36px;
+  /* padding: 4px 24px; */
+  display: flex;
+  align-items: center;
+}
+
+header .branding {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 24px;
+}
+
+header .container {
+  /* outline: dashed 1px red; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .branding i {
+  /* outline: dashed 1px red; */
+  /* margin-left: 36px; */
+  color: aqua;
+}
+
+.branding span {
+  font-weight: 700;
+}
+
+header .nav1 {
+  font-size: 10px;
+  font-weight: 500;
+  /* outline: dashed 1px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+}
+
+header .nav2 {
+  font-size: 14px;
+  font-weight: 500;
+  /* outline: dashed 1px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+}
+
+.nav2 .cart{
+  position: relative;
+  height: 100%;
+}
+
+.nav2 .incart{
+  position: absolute;
+  top: -1px;
+  right: -3px;
+  font-size: 6px;
+  color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: red;
+  border: none;
+  text-align: center;
+}
+
+.nav2 .item3, .item4 {
+  font-size: 10px;
+}
+
+
+/* header ul {
+  display: flex;
+  gap: 8px;
+} */
+
+/* header a {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: inherit;
+} */
+
+
+header i {
+  color: gray;
+}
+
+header .fa-solid fa-cart-shopping {
+  position: relative
+}
+
+header .fa-solid fa-cart-shopping .incart{
+  font-family: "Krub", serif;
+  color: black;
+  position: absolute;
+  
+}
+
+/* Main */
+main .container {
+  /* outline: dashed 1px red; */
+  display: flex;
+  flex-direction: column;
+  /* min-width: inherit; */
+}
+
+/* Section Mycart */
+.mycart {
+  background-color: inherit;
+}
+
+.mycartwrapper {
+  /* outline: dashed 1px red; */
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.selectedwrapper {
+  /* outline: dashed 1px red; */
+  padding: 8px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+}
+
+.selectedproduct {
+  /* outline: dashed 1px red; */
+  box-shadow: 13px 8px 14px -9px rgba(0,0,0,0.72);
+  border-radius: 4px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.trashbox {
+  /* outline: dashed 1px red; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px aqua;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: auto;
+}
+
+.trashbox i {
+  width: 100%;
+  color: aqua;
+}
+
+.productbox1 {
+  /* outline: dashed 1px red; */
+  width: 110px;
+  height: 110px;
+  /* background-color: linear-gradient (#0f80d6,rgba(122, 177, 221, 0.8))  ; */
+  background:linear-gradient(rgba(122, 177, 221, 0.8),rgba(0, 133, 241, 0.8)) ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 8px;
+}
+
+.productbox2 {
+  /* outline: dashed 1px red; */
+  width: 110px;
+  height: 110px;
+  /* background-color: linear-gradient (#0f80d6,rgba(122, 177, 221, 0.8))  ; */
+  background:linear-gradient(rgba(245, 89, 0, 0.21),rgba(245, 89, 0, 0.77)) ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 8px;
+}
+
+.productbox1 .box1 {
+  /* outline: dashed 1px red; */
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: white;
+  padding: auto;
+  margin: 8px 0px 0px 8px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.productbox2 .box1 {
+  /* outline: dashed 1px red; */
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: white;
+  padding: auto;
+  margin: 8px 0px 0px 8px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.productbox1 .box1 i {
+  width: 100%;
+  color: rgba(0, 133, 241, 0.8);
+  margin-top: 8px;
+}
+
+.productbox2 .box1 i {
+  width: 100%;
+  color: rgba(245, 89, 0, 0.77);
+  margin-top: 8px;
+}
+
+.productdetail {
+  /* outline: dashed 1px red; */
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.detail2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail2 p {
+  color: aqua;
+  font-size: 28px;
+  display: flex;
+}
+
+select {
+  padding: 2px;
+  max-height: 26px;
+  font-size: 12px;
+  font-family: "Krub", serif;
+  font-weight: 800;
+}
+
+.detail3 {
+  font-weight: 500;
+}
+
+.summarywrapper {
+  /* outline: dashed 1px red; */
+  box-shadow: 13px 8px 14px -9px rgba(0,0,0,0.72);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  flex-basis: 50%;
+}
+
+.orderinfo {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.subtotal {
+  /* outline: dashed 1px red; */
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promotioncode {
+  /* outline: dashed 1px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+ 
+}
+
+.promotioncode i {
+  color: rgb(24, 44, 44);
+}
+
+.promotioncode .code {
+  flex-basis: 60%;
+  color: gray;
+  font-size: 8px;
+  font-family: "Krub", serif;
+  border: solid 1px gray;
+  margin-left: 8px;
+  text-align: left;
+}
+
+.promotioncode btnApply {
+  margin: auto;
+  display: flex;
+  flex-basis: 25%;
+}
+
+
+.promotioncode button {
+  padding: 2px;
+  font-size: 8px;
+  font-weight: 900;
+  font-family: "Krub", serif;
+  font-weight: 700;
+  width: 100%;
+  color: aqua;
+  border: solid 1px aqua;
+  border-radius: 12px;
+  margin-bottom: 5px;
+
+}
+
+/* .productcodeleft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .productcode button {
+  color: aqua;
+  background-color: white;
+  border: solid 1px aqua;
+  border-radius: 4px;
+  font-size: 12px;
+} */
+
+.totalpayment {
+  /* outline: dashed 1px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 28px;
+  margin-inline: auto;
+}
+
+.login button {
+  background-color: aqua;
+  border: none;
+  font-family: "Krub", serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: black;
+  padding: 4px;
+  width: 100%;
+  border-radius: 12px;
+}
